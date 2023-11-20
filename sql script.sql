@@ -394,3 +394,21 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+/*CRUD*/
+/*
+C: create
+INSERT INTO `users` (`user_id`, `user_name`, `password`, `email`, `more_informations`) VALUES
+(1, 'yasser', 'ysr', 'aitelghariyasser@gmail.com', 'im 19 and i love programming'),
+(2, 'john', 'pass123', 'john@example.com', 'A software developer'),
+R:read
+select user_id 
+from users 
+where user_id < 5
+U:update
+update users
+set user_id = "new_name_of_column"
+D:delete
+delete from users 
+where user_id >5
+*/
