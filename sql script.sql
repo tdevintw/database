@@ -412,3 +412,39 @@ D:delete
 delete from users 
 where user_id >5
 */
+
+
+CRUD 
+CREATE:
+CREATE DATABASE db_name;
+CREATE TABLE table_name;
+/* INSERT USED FOR ROWS*/
+INSERT INTO table_name (col1,col2,col3)
+VALUES (value1,value2,value3),
+       ......
+/*ALTER USED FOR COLUMNS*/
+ALTER INTO table_name
+ADD column_name type Constraints;
+/* TO ADD A FOREIGN KEY*/
+/*id is a foreign key here and a primary key in the table of user for example*/
+ALTER INTO table_name
+ADD FOREIGN KEY (id) REFERENCES id_table (id);
+
+READ:
+SELECT *  (column_name)
+FROM table_name;
+
+/*UPDATE THE CONTENT OF A COLUMN OR A TABLE*/
+UPDATE TABLE table_name
+SET column_name = "new_value"
+WHERE condition;
+
+/*DELETE THE CONTENT OF A TABLE*/
+DELETE: 
+DELETE FROM table_name
+WHERE condition;
+
+/*WE CAN USE THE ALTER TO DELETE A WHOLE COLUMN*/
+ALTER INTO table_name
+DROP column_name;
+
